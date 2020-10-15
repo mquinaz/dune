@@ -54,42 +54,42 @@ namespace Monitors
       void
       onUpdateParameters(void)
       {
-        war("onUpdateParameters\n");
+        war("onUpdateParameters");
       }
 
       //! Reserve entity identifiers.
       void
       onEntityReservation(void)
       {
-        war("onEntityReservation\n");
+        war("onEntityReservation");
       }
 
       //! Resolve entity names.
       void
       onEntityResolution(void)
       {
-        war("onEntityResolution\n");
+        war("onEntityResolution");
       }
 
       //! Acquire resources.
       void
       onResourceAcquisition(void)
       {
-        war("onResourceAcquisition\n");
+        war("onResourceAcquisition");
       }
 
       //! Initialize resources.
       void
       onResourceInitialization(void)
       {
-        war("onResourceInitialization\n");
+        war("onResourceInitialization");
       }
 
       //! Release resources.
       void
       onResourceRelease(void)
       {
-        war("onResourceReleasen\n");
+        war("onResourceRelease");
       }
 
       //! Main loop.
