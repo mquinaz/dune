@@ -513,6 +513,16 @@ main(int argc, char** argv)
     msg = tmsg;
   }
 
+  if (strcmp(argv[3], "ImageClassificationControl") == 0)
+  {
+    IMC::ImageClassificationControl* tmsg = new IMC::ImageClassificationControl;
+    msg = tmsg;
+    tmsg->command = atoi(argv[4]);
+    tmsg->model = argv[5];
+    tmsg->video_source = argv[6];
+    tmsg->sampling_freq = atof(argv[7]);
+  }
+  
   if (strcmp(argv[3], "IridiumMsgTx") == 0)
   {
     IMC::IridiumMsgTx* tmsg = new IMC::IridiumMsgTx;
