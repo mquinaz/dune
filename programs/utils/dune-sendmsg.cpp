@@ -516,12 +516,12 @@ main(int argc, char** argv)
   if (strcmp(argv[3], "ImageClassificationControl") == 0)
   {
     IMC::ImageClassificationControl* tmsg = new IMC::ImageClassificationControl;
-    msg = tmsg;
     tmsg->command = atoi(argv[4]);
     tmsg->model = argv[5];
     tmsg->model_classes = argv[6];
     tmsg->video_source = argv[7];
     tmsg->sampling_freq = atof(argv[8]);
+    msg = tmsg;
   }
   
   if (strcmp(argv[3], "IridiumMsgTx") == 0)
