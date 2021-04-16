@@ -152,7 +152,7 @@ main(int argc, char** argv)
       fprintf(stdout, "  [F]: FuelLevel\n");
       fprintf(stdout, "  [G]: GpsFix, GpsFixRtk\n");
       fprintf(stdout, "  [H]: Heartbeat\n");
-      fprintf(stdout, "  [I]: IridiumMsgTx, ImageClassificationControl\n");
+      fprintf(stdout, "  [I]: ImageClassificationControl, IridiumMsgTx\n");
       fprintf(stdout, "  [L]: LblConfig, LblRange, LeaderState, LeakSimulation, LogBookControl, LogBookEntry,\n");
       fprintf(stdout, "       LoggingControl\n");
       fprintf(stdout, "  [M]: MagneticField, MonitorEntityState\n");
@@ -518,9 +518,8 @@ main(int argc, char** argv)
     IMC::ImageClassificationControl* tmsg = new IMC::ImageClassificationControl;
     tmsg->command = atoi(argv[4]);
     tmsg->model = argv[5];
-    tmsg->model_classes = argv[6];
-    tmsg->video_source = argv[7];
-    tmsg->sampling_freq = atof(argv[8]);
+    tmsg->video_source = argv[6];
+    tmsg->sampling_freq = atof(argv[7]);
     msg = tmsg;
   }
   
